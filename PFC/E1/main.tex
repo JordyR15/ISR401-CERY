@@ -1,0 +1,308 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[
+    a4paper,
+    margin=2.5cm,
+    includeheadfoot,
+    headheight=14pt,
+    headsep=0.6cm,
+    footskip=0.9cm
+]{geometry}
+\usepackage{lmodern}
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{azul}{HTML}{17365D}
+\definecolor{azulclaro}{HTML}{EDF2F7}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\tabcolsep}{8pt}
+\renewcommand{\arraystretch}{1.35}
+
+\setlist[itemize]{leftmargin=*,itemsep=4pt}
+\setlist[enumerate]{leftmargin=*,itemsep=4pt}
+
+\titleformat{\section}
+    {\large\bfseries\color{azul}}
+    {\thesection.}{0.6em}{}
+
+\titleformat{\subsection}
+    {\normalsize\bfseries}
+    {\thesubsection.}{0.6em}{}
+
+\titlespacing*{\section}{0pt}{12pt}{5pt}
+\titlespacing*{\subsection}{0pt}{8pt}{3pt}
+
+\setcounter{tocdepth}{2}
+
+\addto\captionsspanish{
+    \renewcommand{\contentsname}{Índice de contenido}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small UTEQ · Ingeniería de Requerimientos}
+\fancyhead[R]{\small TA-PFC-E1}
+\fancyfoot[L]{\footnotesize Equipo CERY}
+\fancyfoot[R]{\footnotesize Página \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\raggedbottom
+
+\begin{document}
+
+\begin{titlepage}
+\thispagestyle{empty}
+
+\begin{center}
+
+\vspace*{0.2cm}
+
+{\large\bfseries
+UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO}
+
+\vspace{0.35cm}
+
+Facultad de Ciencias de la Computación
+
+Carrera de Ingeniería de Software
+
+\vspace{0.45cm}
+
+{\color{azul}\rule{\textwidth}{1pt}}
+
+\vspace{0.45cm}
+
+{\large\bfseries PROYECTO FIN DE CURSO}
+
+\vspace{0.25cm}
+
+{\large\bfseries TA-PFC-E1}
+
+\vspace{0.4cm}
+
+{\Large\bfseries
+Sistema de gestión de tutorías y seguimiento estudiantil}
+
+\vspace{0.35cm}
+
+{\large
+Entrega 1: visión, alcance, partes interesadas,
+contexto y plan de elicitación}
+
+\vspace{0.6cm}
+
+\end{center}
+
+\arrayrulecolor{azul}
+
+\begin{tabularx}{\textwidth}{
+    |>{\columncolor{azulclaro}\raggedright\arraybackslash}p{3.6cm}
+    |>{\raggedright\arraybackslash}X|
+}
+\hline
+\rowcolor{azul}
+\textcolor{white}{\textbf{Campo}} &
+\textcolor{white}{\textbf{Detalle}} \\
+\hline
+Integrantes &
+Angelo Maximiliano Espinoza Pivaque \newline
+Luis Antonio Yepez Guagua \newline
+Jordy Fabián Rivas Bodero \newline
+Yerai David Chalacán Toala \\
+\hline
+Asignatura &
+Ingeniería de Requerimientos (ISR-401) \\
+\hline
+Nivel y paralelo &
+Cuarto nivel · Paralelo A \\
+\hline
+Docente &
+Gleiston Cicerón Guerrero Ulloa, PhD \\
+\hline
+Modalidad &
+Trabajo autónomo grupal con calificación individual \\
+\hline
+Fecha límite &
+21 de noviembre de 2026, 23:59 \\
+\hline
+Período &
+2026--2027 SPA \\
+\hline
+\end{tabularx}
+
+\vfill
+
+\begin{center}
+
+{\color{azul}\rule{\textwidth}{1pt}}
+
+Quevedo -- Ecuador
+
+2026
+
+\end{center}
+
+\end{titlepage}
+
+\pagenumbering{roman}
+
+\tableofcontents
+
+\clearpage
+
+\pagenumbering{arabic}
+
+\section{Organización y planteamiento del problema}
+
+\subsection{Identificación de la organización}
+
+\subsection{Contacto inicial y aceptación de la organización}
+
+\subsection{Descripción del proceso actual y problemática}
+
+Cuando los estudiantes necesitan una tutoría, primero conversan en persona
+con el docente para explicarle sus dudas y comentar qué temas necesitan
+revisar. Si acuerdan realizar la sesión, continúan la comunicación por
+WhatsApp para definir el día y la hora. Por ese mismo medio confirman
+la tutoría o coordinan un cambio cuando el horario propuesto deja
+de estar disponible.
+
+La dificultad aparece cuando los estudiantes y los docentes necesitan
+consultar qué se acordó. La solicitud se plantea de manera presencial,
+mientras que los horarios, las confirmaciones y los cambios quedan entre
+los mensajes de WhatsApp. Por ejemplo, si se propusieron dos horarios
+distintos, ambos deben revisar la conversación para identificar cuál
+quedó confirmado. Esto dificulta distinguir las tutorías que todavía
+están pendientes de las que ya tienen fecha y hora.
+
+El seguimiento también continúa después de la sesión. Si un estudiante
+vuelve a solicitar apoyo, el docente necesita saber qué temas revisaron,
+qué recomendaciones le dio y qué actividades quedaron pendientes.
+Cuando esa información no está disponible en un registro fácil de
+consultar, cuesta retomar la tutoría desde el punto en que quedó.
+
+El seguimiento no termina con registrar la asistencia a una tutoría.
+También es necesario conocer cómo evoluciona el estudiante y si las
+dificultades que motivaron la sesión persisten. Para decidir si requiere
+apoyo adicional, el docente necesita relacionar lo trabajado en las
+tutorías con información pertinente sobre su desempeño académico.
+Por ello, durante la elicitación se deberá conocer cómo se realiza
+actualmente ese seguimiento, qué información está disponible y qué
+indicadores podrían ayudar a identificar dificultades de manera
+oportuna. Las fuentes de información, los permisos de consulta y los
+criterios de interpretación deberán confirmarse con los responsables
+académicos.
+
+\subsection{Personas afectadas por la problemática}
+
+En el proceso descrito, los estudiantes necesitan identificar con
+claridad cuándo se realizará una tutoría y recuperar las recomendaciones
+recibidas para continuar su preparación. La dispersión de acuerdos
+entre conversaciones presenciales y mensajes puede dificultar la
+consulta de horarios y actividades pendientes.
+
+Los docentes tutores necesitan recuperar lo trabajado con cada
+estudiante para dar continuidad al acompañamiento. Cuando los acuerdos
+y las recomendaciones no están reunidos en un registro consultable,
+retomar una sesión requiere reconstruir la información a partir de
+mensajes y apuntes disponibles.
+
+También se considera a la coordinación académica como una parte
+interesada potencial en el seguimiento de las tutorías. Durante la
+elicitación se deberá confirmar qué responsabilidades tiene en este
+proceso, qué información necesita y qué dificultades encuentra para
+consultarla.
+
+\subsection{Fuentes y respaldo del diagnóstico}
+
+\section{Visión y objetivos}
+
+\subsection{Declaración de visión}
+
+\subsection{Objetivos de negocio medibles}
+
+\subsection{Criterios de medición de los objetivos}
+
+\section{Alcance y restricciones}
+
+\subsection{Procesos incluidos en el sistema}
+
+\subsection{Procesos excluidos del proyecto}
+
+\subsection{Restricciones conocidas}
+
+\subsection{Supuestos y aspectos por confirmar}
+
+\section{Partes interesadas}
+
+\subsection{Identificación de roles}
+
+\subsection{Interés, influencia y disponibilidad}
+
+\subsection{Matriz poder--interés}
+
+\subsection{Estrategias de participación}
+
+\section{Contexto del sistema}
+
+\subsection{Límite del sistema y entidades externas}
+
+\subsection{Diagrama de contexto}
+
+\subsection{Intercambios de información}
+
+\subsection{Tabla de las ocho perspectivas de contexto}
+
+\section{Plan de elicitación}
+
+\subsection{Fuentes de información y técnicas seleccionadas}
+
+\subsection{Justificación de las técnicas por parte interesada}
+
+\subsection{Cronograma de sesiones y responsables}
+
+\subsection{Guion de entrevista}
+
+\subsection{Cuestionario}
+
+\subsection{Guía de observación o taller}
+
+\section{Ética y tratamiento de datos}
+
+\subsection{Modelo de consentimiento informado}
+
+\subsection{Procedimiento de anonimización}
+
+\subsection{Custodia y control de acceso a evidencias}
+
+\subsection{Manifiesto de evidencias privadas}
+
+\section{Gestión del proyecto}
+
+\subsection{Roles y responsabilidades del equipo}
+
+\subsection{Cronograma hasta la semana 17}
+
+\subsection{Plan de comunicación con la organización}
+
+\subsection{Registro de riesgos y medidas de respuesta}
+
+\section{Referencias}
+
+\section{Declaración de uso de inteligencia artificial}
+
+\end{document}
