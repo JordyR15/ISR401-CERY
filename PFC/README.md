@@ -24,12 +24,3 @@ Repositorio y documentación del **Proyecto Fin de Curso (PFC)** para la asignat
   * `PFC\E1\main.pdf`: Documento PDF compilado[cite: 5].
   * `PFC\E1\README.md`: Compiladores, dependencias y secuencia de comandos para compilar `main.tex`[cite: 5, 6].
 
-## Compilación de la entrega (`PFC\E1`)
-
-Para generar `PFC\E1\main.pdf` y cargar las referencias bibliográficas en estilo **IEEE**, revisa los compiladores y dependencias detallados en `PFC\E1\README.md` y ejecuta desde `PFC\E1`:
-
-```bat
-pdflatex main.tex
-biber main
-pdflatex main.tex
-pdflatex main.tex
