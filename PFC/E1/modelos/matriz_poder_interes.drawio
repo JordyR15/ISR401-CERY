@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Matriz poder-interes" id="matriz-pi">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="q1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#f5f5f5;" value="Mantener satisfechos" vertex="1">
+          <mxGeometry height="250" width="300" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#d5e8d4;" value="Gestionar de cerca" vertex="1">
+          <mxGeometry height="250" width="300" x="400" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#ffffff;" value="Monitorear" vertex="1">
+          <mxGeometry height="250" width="300" x="100" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="q4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#fff2cc;" value="Mantener informados" vertex="1">
+          <mxGeometry height="250" width="300" x="400" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="ejeY" parent="1" style="text;html=1;align=center;verticalAlign=middle;rotation=-90;" value="Poder" vertex="1">
+          <mxGeometry height="30" width="60" x="20" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="ejeX" parent="1" style="text;html=1;align=center;verticalAlign=middle;" value="Interés" vertex="1">
+          <mxGeometry height="30" width="60" x="370" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="sh03" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="SH-03 Coordinación académica" vertex="1">
+          <mxGeometry height="60" width="140" x="520" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="sh04" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="SH-04 Autoridad de la unidad" vertex="1">
+          <mxGeometry height="60" width="140" x="230" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="sh08" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="SH-08 Protección de datos" vertex="1">
+          <mxGeometry height="60" width="140" x="130" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="sh02" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="SH-02 Docente tutor" vertex="1">
+          <mxGeometry height="60" width="140" x="430" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="sh01" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="SH-01 Estudiante" vertex="1">
+          <mxGeometry height="60" width="130" x="560" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="sh05" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="SH-05 Administración técnica (TI)" vertex="1">
+          <mxGeometry height="60" width="130" x="260" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="sh06" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="SH-06 Datos académicos" vertex="1">
+          <mxGeometry height="60" width="130" x="120" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="sh07" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="SH-07 Apoyo estudiantil" vertex="1">
+          <mxGeometry height="60" width="130" x="230" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="WlrqUH2aiiU5LHJeuLS8-1" edge="1" parent="1" source="ejeX" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0.667;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="ejeX">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
