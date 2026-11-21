@@ -1,10 +1,10 @@
-## 📋 Descripción del Repositorio
+## Descripción del Repositorio
 
 Repositorio oficial para el registro, gestión de avances y documentación del proyecto colaborativo de la asignatura de **Ingeniería de Requerimientos**. Este espacio centraliza el análisis de requisitos, modelado de arquitectura (Modelo C4), gestión de riesgos bajo estándares internacionales (IEEE 29148 y Pohl) y artefactos de ingeniería del software.
 
 ---
 
-## 👥 Equipo de Desarrollo
+## Equipo de Desarrollo
 
 | Integrante | Rol / Responsabilidad | Usuario de GitHub |
 | :--- | :--- | :--- |
