@@ -882,27 +882,182 @@ La aplicación deberá permitir consultar horarios, acuerdos e indicadores sin d
 
 \section{Plan de elicitación}
 
+Este plan describe cómo se obtendrá la información que todavía falta. Ninguna sesión se ha realizado a la fecha de esta versión: las tablas indican qué se hará, con quién y con qué instrumento, no lo que ya se encontró. Los instrumentos están en la carpeta \texttt{instrumentos/} del repositorio.
+
 \subsection{Fuentes de información y técnicas seleccionadas}
+
+La técnica se elige según la fuente y el tipo de conocimiento que se busca \cite{pohl2025,ireb2026}. Con los docentes y la coordinación interesan decisiones, excepciones y criterios que ellos conocen y pueden explicar, por lo que se usa la entrevista. Con los estudiantes interesan respuestas comparables de un grupo, por lo que se usa un cuestionario. Para contrastar lo que se dice con lo que ocurre se agrega una observación del proceso. La Tabla~\ref{tab:fuentes} asigna una técnica a cada rol de la Tabla~\ref{tab:stakeholders}.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Fuentes, información buscada y técnicas (propuestas por confirmar).}
+\label{tab:fuentes}
+\arrayrulecolor{azul}
+\begin{tabularx}{\textwidth}{
+    |l
+    |>{\raggedright\arraybackslash}X
+    |>{\raggedright\arraybackslash}p{3.2cm}
+    |>{\raggedright\arraybackslash}p{2.6cm}|
+}
+\hline
+\textbf{ID} & \textbf{Información buscada} & \textbf{Técnica} & \textbf{Instrumento} \\ \hline
+SH-01 & Cómo pide y confirma una tutoría hoy, qué pierde de vista y qué quisiera consultar & Cuestionario & Q-EST \\ \hline
+SH-02 & Cómo decide, registra y recupera antecedentes; excepciones; qué datos usa para dar seguimiento & Entrevista y observación & G-ENT (A a F), G-OBS \\ \hline
+SH-03 & Qué seguimiento necesita, con qué criterios se señala un caso, qué autoriza; revisión del alcance propuesto & Entrevista y reunión de validación & G-ENT (A a F) \\ \hline
+SH-04 & Condiciones para autorizar el proyecto y procesos de la unidad que debe respetar & Entrevista breve & G-ENT (A y F) \\ \hline
+SH-05 & Entorno técnico, integraciones posibles y restricciones & Entrevista breve & G-ENT (D y F) \\ \hline
+SH-06 & Fuentes de datos académicos disponibles, formatos y permisos & Entrevista breve & G-ENT (D) \\ \hline
+SH-07 & Qué alertas recibiría y por qué canal, sin tratar casos individuales & Entrevista breve & G-ENT (D y E) \\ \hline
+SH-08 & Condiciones para tratar datos personales de estudiantes & Consulta puntual & G-ENT (D) \\ \hline
+\end{tabularx}
+\end{table}
 
 \subsection{Justificación de las técnicas por parte interesada}
 
+\begin{itemize}
+
+    \item \textbf{Estudiantes (SH-01).} Se usa un cuestionario porque se buscan respuestas comparables de una población definida: estudiantes de la carrera que han pedido tutorías. Entrevistar a todos no es viable. El acceso y el número de participantes se acordarán con la coordinación, y no se fija una muestra mientras no se conozca esa población. Las respuestas servirán para contrastar la dispersión de información descrita en la sección 1, sin generalizarla a toda la carrera.
+
+    \item \textbf{Docentes tutores (SH-02).} Se usa la entrevista porque las decisiones, las excepciones y los criterios de seguimiento son conocimiento del docente y se exploran mejor con preguntas abiertas. La observación contrasta el flujo descrito con lo que ocurre al gestionar una solicitud, en la sesión que el docente autorice.
+
+    \item \textbf{Coordinación académica (SH-03).} Es el rol de interés e influencia altos, por lo que se propone una entrevista y, después de analizar lo recogido, una reunión para revisar con ella el alcance, los estados de una tutoría y los criterios de seguimiento.
+
+    \item \textbf{Autoridad, administración técnica, datos académicos, bienestar y protección de datos (SH-04 a SH-08).} Aportan decisiones puntuales: autorización, entorno técnico, fuentes y permisos, alertas y tratamiento de datos. Por eso se plantean entrevistas breves o consultas puntuales, sin pedirles participar en observaciones. Con bienestar estudiantil no se tratarán casos individuales.
+
+\end{itemize}
+
 \subsection{Cronograma de sesiones y responsables}
+
+La Tabla~\ref{tab:sesiones} propone un orden y una ventana de tiempo. Empieza por la coordinación porque puede autorizar el trabajo e indicar a quién contactar. Las ventanas se ubican entre las semanas 5 y 6, antes de la entrega TA-PFC-E2, y todas dependen de la disponibilidad de los participantes. Ninguna sesión está agendada. Quién conduce y quién registra cada sesión lo acordará el equipo antes de agendarla.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Sesiones de elicitación propuestas (ninguna agendada).}
+\label{tab:sesiones}
+\arrayrulecolor{azul}
+\begin{tabularx}{\textwidth}{
+    |l
+    |l
+    |>{\raggedright\arraybackslash}X
+    |>{\raggedright\arraybackslash}p{2.4cm}
+    |>{\raggedright\arraybackslash}p{2.6cm}|
+}
+\hline
+\textbf{ID} & \textbf{Rol} & \textbf{Técnica} & \textbf{Ventana propuesta} & \textbf{Conduce y registra} \\ \hline
+S-01 & SH-03 & Entrevista & Semana 5 & Por asignar \\ \hline
+S-02 & SH-02 & Entrevista & Semana 5 & Por asignar \\ \hline
+S-03 & SH-02 & Observación del proceso & Semanas 5 y 6 & Por asignar \\ \hline
+S-04 & SH-01 & Cuestionario & Semanas 5 y 6 & Por asignar \\ \hline
+S-05 & SH-04, SH-08 & Entrevista breve o consulta puntual (autorización y datos personales) & Semana 5 & Por asignar \\ \hline
+S-06 & SH-05, SH-06 & Entrevista breve (fuentes, permisos y entorno técnico) & Semana 6 & Por asignar \\ \hline
+S-07 & SH-07 & Entrevista breve & Semana 6 & Por asignar \\ \hline
+S-08 & SH-03 & Reunión de validación de lo documentado & Semana 6 & Por asignar \\ \hline
+\end{tabularx}
+\end{table}
 
 \subsection{Guion de entrevista}
 
+El guion G-ENT está en \texttt{instrumentos/\allowbreak guion\_entrevista.md}. Es una entrevista semiestructurada con apertura, seis bloques y cierre, un total de 17 preguntas abiertas que se hacen una por vez. La apertura incluye el consentimiento y la decisión sobre grabar el audio. Las preguntas no sugieren la respuesta y exploran el proceso actual antes de hablar de un sistema. La hoja de registro separa lo que dijo el participante de la interpretación del equipo. La Tabla~\ref{tab:bloques} resume los bloques.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Bloques del guion de entrevista.}
+\label{tab:bloques}
+\arrayrulecolor{azul}
+\begin{tabularx}{\textwidth}{
+    |l
+    |>{\raggedright\arraybackslash}X
+    |c|
+}
+\hline
+\textbf{Bloque} & \textbf{Qué se explora} & \textbf{Preguntas} \\ \hline
+A & Rol y contexto del participante & 2 \\ \hline
+B & Solicitud y coordinación de las tutorías & 3 \\ \hline
+C & Registro y continuidad entre sesiones & 3 \\ \hline
+D & Seguimiento, datos e indicadores y sus permisos & 3 \\ \hline
+E & Situaciones difíciles y qué cambiarían & 2 \\ \hline
+F & Expectativas y restricciones & 2 \\ \hline
+Cierre & Algo no preguntado y otras personas a consultar & 2 \\ \hline
+\end{tabularx}
+\end{table}
+
 \subsection{Cuestionario}
 
+El cuestionario Q-EST está en \texttt{instrumentos/\allowbreak cuestionario\_estudiantes.md}. Es anónimo y no pide nombre, cédula ni correo. Tiene 11 preguntas: 9 cerradas con opciones que no se solapan y 2 abiertas opcionales. Antes de las preguntas se explica el propósito, que la participación es voluntaria y cómo se tratan las respuestas, y las escalas de frecuencia se definen en las instrucciones. Se organiza en cuatro bloques (perfil mínimo, solicitud y coordinación, continuidad y expectativas), y el instrumento indica qué información produce cada uno. Las respuestas se analizarán con frecuencias simples y se presentarán sin generalizarlas a toda la carrera.
+
 \subsection{Guía de observación o taller}
+
+Se elige la observación y no el taller. La guía G-OBS es el archivo \texttt{guia\_observacion.md} de la carpeta \texttt{instrumentos/}. Se observa el proceso que rodea a una tutoría (llegada de la solicitud, acuerdo y confirmación del horario, registro y consulta de antecedentes) y no el contenido académico de la sesión. La guía lista ocho aspectos a observar, pide autorización previa y consentimiento, prohíbe grabar audio o video y no revisa conversaciones privadas de WhatsApp, en coherencia con los procesos excluidos de la sección 3. Se estima una duración de 30 a 60 minutos por observación, y la hoja de registro separa el hecho observado de la interpretación.
 
 \section{Ética y tratamiento de datos}
 
 \subsection{Modelo de consentimiento informado}
 
+El modelo siguiente está vacío. A la fecha de esta versión no existe ningún consentimiento firmado. Se usará en las entrevistas y en las observaciones. En el cuestionario anónimo se presenta como texto inicial y se entiende aceptado al continuar. Los formularios firmados y sus originales no se publican en el repositorio.
+
+\begin{table}[!ht]
+\centering
+\small
+\arrayrulecolor{azul}
+\begin{tabularx}{\textwidth}{
+    |>{\columncolor{azulclaro}\raggedright\arraybackslash}p{3.4cm}
+    |>{\raggedright\arraybackslash}X|
+}
+\hline
+\rowcolor{azul}
+\multicolumn{2}{|l|}{\textcolor{white}{\textbf{Consentimiento informado para participar en el levantamiento de requisitos}}} \\ \hline
+Proyecto & Sistema de gestión de tutorías y seguimiento estudiantil, trabajo académico de la asignatura Ingeniería de Requerimientos (ISR-401), Universidad Técnica Estatal de Quevedo. \\ \hline
+Responsables & Equipo CERY: Angelo Maximiliano Espinoza Pivaque, Luis Antonio Yepez Guagua, Jordy Fabián Rivas Bodero y Yerai David Chalacán Toala. \\ \hline
+Propósito & Conocer cómo se organizan hoy las tutorías para proponer requisitos de un sistema. Es un trabajo académico y no una evaluación de su desempeño. \\ \hline
+Participación & Es voluntaria. Puede no responder una pregunta, detener la actividad o retirarse en cualquier momento sin consecuencia alguna. \\ \hline
+Actividades & Entrevista de unos 30 a 40 minutos, cuestionario o observación del proceso, según corresponda. \\ \hline
+Grabación & Autorizo la grabación de audio: \hspace{0.5em}( ) Sí \hspace{0.5em}( ) No. Si marca No, se tomarán solo notas escritas. \\ \hline
+Información que se recoge & Descripciones y opiniones sobre el proceso de tutorías. No se piden calificaciones, cédulas ni datos de otros estudiantes. \\ \hline
+Uso y custodia & Uso exclusivo del proyecto académico. Los originales se guardan en una carpeta institucional privada compartida con el docente de la asignatura. En el repositorio público solo se publican versiones anonimizadas y un manifiesto. \\ \hline
+Conservación & Hasta concluir el proyecto. Después, según las instrucciones aplicables del docente y la normativa de protección de datos \cite{lopdp2021}. \\ \hline
+Sus derechos & Puede pedir acceso a su información, su corrección o su eliminación, y retirar su consentimiento, conforme a la ley \cite{lopdp2021}. Contacto del equipo: \underline{\hspace{4.5cm}} \\ \hline
+Aceptación & He leído esta información y acepto participar. \newline Nombre: \underline{\hspace{4.5cm}} \quad Rol: \underline{\hspace{3cm}} \newline Fecha: \underline{\hspace{3cm}} \quad Firma: \underline{\hspace{4cm}} \\ \hline
+\end{tabularx}
+\end{table}
+
 \subsection{Procedimiento de anonimización}
+
+\begin{itemize}
+
+    \item Cada sesión recibe un código (ENT-01, OBS-01) y cada participante se identifica solo por su rol. La tabla que relaciona códigos con personas se guarda en la carpeta privada, nunca en el repositorio.
+
+    \item Antes de publicar notas o transcripciones se eliminan nombres, cédulas, teléfonos, correos, calificaciones y cualquier dato que permita reconocer a una persona o a un estudiante concreto.
+
+    \item Los audios, las fotografías y los formularios firmados no se publican. En el repositorio solo se sube la versión anonimizada de las notas.
+
+    \item Quien anonimiza no es la misma persona que la revisa. Antes de cada \emph{commit} se revisan los archivos que se van a agregar, y se agregan por ruta concreta, no en bloque. Esto responde al riesgo R-03.
+
+    \item Las respuestas del cuestionario se publican solo como conteos agrupados.
+
+\end{itemize}
 
 \subsection{Custodia y control de acceso a evidencias}
 
+\begin{itemize}
+
+    \item \textbf{Dónde.} Una carpeta en la cuenta institucional \texttt{@uteq.edu.ec}, compartida con el docente de la asignatura, con subcarpetas para consentimientos, audios, notas originales y tabla de códigos.
+
+    \item \textbf{Responsable.} Se propone a Yerai David Chalacán Toala como responsable de la carpeta y del manifiesto, pendiente de que el equipo lo acepte.
+
+    \item \textbf{Acceso.} Solo quienes necesitan una evidencia para trabajar con ella, además del docente. Cada cambio de permisos se anota en el manifiesto.
+
+    \item \textbf{Originales.} Se conservan sin modificar. El trabajo se hace sobre copias anonimizadas.
+
+    \item \textbf{Al finalizar.} El tratamiento de los originales al concluir el proyecto se decidirá según las instrucciones aplicables. No se fija un plazo de conservación propio.
+
+\end{itemize}
+
 \subsection{Manifiesto de evidencias privadas}
+
+El manifiesto está en \texttt{evidencias/MANIFIESTO.md}. Registra, por cada evidencia privada, su nombre de archivo, tipo, fecha, duración (o \enquote{no aplica}), huella SHA-256 y ubicación, y si contiene datos personales. La huella se calcula sobre el original final y se actualiza si el archivo cambia. Sirve para comprobar que el archivo no cambió. No prueba que exista consentimiento ni que el contenido sea verdadero. A la fecha de esta versión no hay evidencias registradas, porque el contacto con la organización y la carta de aceptación siguen pendientes (sección 1).
 
 \section{Gestión del proyecto}
 
@@ -1034,6 +1189,58 @@ Distribuir las actividades mediante hitos semanales, mantener actualizaciones fr
 
 \end{tabularx}
 
+\arrayrulecolor{azul}
+
+\begin{tabularx}{\textwidth}{
+    |>{\columncolor{azulclaro}\bfseries\raggedright\arraybackslash}p{1.4cm}
+    |>{\raggedright\arraybackslash}X
+    |>{\raggedright\arraybackslash}p{2.0cm}
+    |>{\raggedright\arraybackslash}X|
+}
+
+\hline
+
+\rowcolor{azul}
+\textcolor{white}{\textbf{ID}} &
+\textcolor{white}{\textbf{Descripción del riesgo}} &
+\textcolor{white}{\textbf{Severidad}} &
+\textcolor{white}{\textbf{Medida de respuesta}} \\
+
+\hline
+
+R-05 &
+Los indicadores de rendimiento se interpretan o se usan como un diagnóstico concluyente sobre un estudiante. &
+Alta &
+Presentarlos solo como apoyo a la revisión de los responsables académicos, acordar con ellos los criterios de seguimiento y no ofrecer predicciones, en coherencia con los procesos excluidos del alcance. \\
+
+\hline
+
+R-06 &
+El alcance propuesto resulta excesivo frente al tiempo disponible o a lo que la organización autorice. &
+Media &
+Tratar los procesos incluidos como candidatos, revisar el alcance con la coordinación después de las primeras sesiones y priorizar los procesos que cuenten con fuentes y permisos confirmados. \\
+
+\hline
+
+R-07 &
+Conflictos al integrar los aportes en \texttt{main.tex} o fallos de compilación que impidan generar el PDF. &
+Media &
+Anunciar la sección que se va a editar, actualizar la copia local antes de editar, agregar los cambios por ruta y compilar siguiendo el README en una copia limpia antes de subir el PDF. \\
+
+\hline
+
+R-08 &
+La organización no acepta colaborar o no autoriza la recolección de información a tiempo para las sesiones propuestas. &
+Alta &
+Registrar la fecha y el medio de cada contacto, informar el estado real de la aceptación sin darla por obtenida y, mientras tanto, trabajar con fuentes documentales y marcar lo pendiente como tal. \\
+
+\hline
+
+\end{tabularx}
+
+
+La severidad es una valoración del equipo: se considera alta cuando el riesgo afecta la autorización de la organización, la protección de datos personales o la validez de lo entregado, y media cuando retrasa o complica el trabajo. No se ha medido la probabilidad de cada riesgo.
+
 \section{Referencias}
 
 \printbibliography[heading=none]
@@ -1107,4 +1314,17 @@ Se revisó la coherencia de los apartados con el tema
 del proyecto y con los aportes de los demás integrantes.
 La información sobre el proceso de tutorías deberá
 contrastarse posteriormente con la organización.
+
+\paragraph{Declaración de Yerai David Chalacán Toala.}
+
+\textbf{Herramienta utilizada:} Claude (Anthropic). La sesión estaba configurada con el modelo claude-sonnet-5-5; la versión exacta que atendió cada respuesta puede diferir y la interfaz no la muestra, por lo que se indica como no disponible.
+
+\textbf{Propósito:}
+
+Me encargué de los apartados \textit{Plan de elicitación} y \textit{Ética y tratamiento de datos} y de los instrumentos de la carpeta \texttt{instrumentos/}. Compartí con Claude la guía de la actividad y el plan del equipo y le pedí propuestas de estructura para el guion de entrevista, el cuestionario, la guía de observación, el modelo de consentimiento, el procedimiento de anonimización y el manifiesto, además del código \LaTeX{} de esas secciones y de cuatro filas del registro de riesgos. Los textos propuestos son la base de lo entregado, adaptados al proyecto.
+
+\textbf{Verificación:}
+
+Leí cada instrumento y comprobé que sus preguntas se relacionan con lo que el informe deja por confirmar sobre tutorías, datos y permisos. Revisé que ninguna sesión figure como realizada, que el modelo de consentimiento y el manifiesto estén vacíos y que no contengan datos personales. Compilé el documento siguiendo el README. Puedo explicar y modificar cada instrumento y cada decisión de esos apartados.
+
 \end{document}
