@@ -228,9 +228,32 @@ La coordinación académica también se considera una parte interesada potencial
 
 \subsection{Declaración de visión}
 
+Para los estudiantes, los docentes tutores y la coordinación académica que necesitan organizar y dar seguimiento a las tutorías, se propone un sistema de gestión de tutorías y seguimiento estudiantil que reúna en un solo lugar las solicitudes, los horarios confirmados, las recomendaciones y las actividades pendientes de cada tutoría. A diferencia del proceso actual, que se apoya en conversaciones presenciales y mensajes de WhatsApp, el sistema busca que cada paso quede registrado y pueda consultarse por quien corresponda. Esta visión es una propuesta del equipo y se confirmará con la organización.
+
+
 \subsection{Objetivos de negocio medibles}
 
+Los objetivos de la Tabla~\ref{tab:objetivos} son propuestas del equipo. Todavía no existe una línea base: se obtendrá con la medición indicada en cada fila, y las metas quedan por acordar con la organización.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Objetivos de negocio medibles (propuestas por acordar).}
+\label{tab:objetivos}
+\begin{tabularx}{\textwidth}{|l|X|X|X|X|}
+\hline
+\textbf{ID} & \textbf{Resultado buscado} & \textbf{Indicador (unidad)} & \textbf{Línea base} & \textbf{Meta y plazo} \\ \hline
+OBJ-01 & Reducir la espera entre la solicitud de una tutoría y su confirmación & Tiempo de confirmación (horas) & Por medir: registrar las solicitudes durante dos semanas & Por acordar; evaluación en la semana 17 \\ \hline
+OBJ-02 & Aumentar las tutorías que quedan registradas con tema y asistencia & Proporción de tutorías con registro completo (\%) & Por medir: contar tutorías realizadas frente a registradas en un periodo & Por acordar; evaluación en la semana 17 \\ \hline
+OBJ-03 & Reducir el tiempo para reunir el historial de tutorías de un estudiante & Tiempo de consulta del historial (minutos) & Por medir: cronometrar la consulta actual en varios casos & Por acordar; evaluación en la semana 17 \\ \hline
+\end{tabularx}
+\end{table}
+
+
 \subsection{Criterios de medición de los objetivos}
+
+Cada indicador se mide con registros que el equipo pueda revisar. El tiempo de confirmación (OBJ-01) se toma de la fecha y hora de la solicitud y de la confirmación. La proporción de tutorías registradas (OBJ-02) se calcula dividiendo las tutorías con tema y asistencia registrados entre las tutorías realizadas en el periodo. El tiempo de consulta del historial (OBJ-03) se cronometra en varios casos reales. La medición la realizará el equipo junto con la coordinación académica, y las metas se fijarán solo cuando exista la línea base. Los indicadores apoyan la revisión académica; no se afirma capacidad predictiva ni diagnóstico concluyente.
+
 
 \section{Alcance y restricciones}
 
@@ -246,11 +269,68 @@ La coordinación académica también se considera una parte interesada potencial
 
 \subsection{Identificación de roles}
 
+Las partes interesadas se identifican por rol y no por nombre. Hasta ahora se han confirmado tres roles: estudiante, docente tutor y coordinación académica. Los demás roles de la Tabla~\ref{tab:stakeholders} son candidatos del equipo y están marcados como \textit{propuesto}, a la espera de confirmarse con la organización.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Partes interesadas por rol.}
+\label{tab:stakeholders}
+\begin{tabularx}{\textwidth}{|l|l|X|l|}
+\hline
+\textbf{ID} & \textbf{Rol} & \textbf{Qué necesita del sistema} & \textbf{Estado} \\ \hline
+SH-01 & Estudiante & Solicitar tutorías y consultar su seguimiento & Confirmado \\ \hline
+SH-02 & Docente tutor & Registrar tutorías y consultar antecedentes & Confirmado \\ \hline
+SH-03 & Coordinación académica & Ver el seguimiento y la continuidad de las tutorías & Confirmado \\ \hline
+SH-04 & Autoridad de la unidad académica & Que el proyecto cumpla los procesos de la unidad & Propuesto \\ \hline
+SH-05 & Administración técnica (TI) & Que el sistema sea mantenible y compatible con su entorno & Propuesto \\ \hline
+SH-06 & Responsable de datos académicos & Controlar qué datos de los estudiantes se usan & Propuesto \\ \hline
+SH-07 & Apoyo o bienestar estudiantil & Recibir alertas de estudiantes que lo necesiten & Propuesto \\ \hline
+SH-08 & Responsable de protección de datos & Que el tratamiento de datos personales sea adecuado & Propuesto \\ \hline
+\end{tabularx}
+\end{table}
+
+
 \subsection{Interés, influencia y disponibilidad}
+
+La Tabla~\ref{tab:influencia} resume la valoración de cada rol. Todas las valoraciones son propuestas del equipo, y la disponibilidad se mantiene por confirmar; para cada rol propuesto se indica quién la consultará.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Interés, influencia y disponibilidad (propuestas por confirmar).}
+\label{tab:influencia}
+\begin{tabularx}{\textwidth}{|l|l|l|X|}
+\hline
+\textbf{ID} & \textbf{Interés} & \textbf{Influencia} & \textbf{Disponibilidad} \\ \hline
+SH-01 & Alto & Baja & Por confirmar \\ \hline
+SH-02 & Alto & Media & Por confirmar \\ \hline
+SH-03 & Alto & Alta & Por confirmar \\ \hline
+SH-04 & Medio & Alta & Por confirmar con la coordinación \\ \hline
+SH-05 & Medio & Media & Por confirmar con la coordinación \\ \hline
+SH-06 & Medio & Media & Por confirmar con la coordinación \\ \hline
+SH-07 & Medio & Baja & Por confirmar con la coordinación \\ \hline
+SH-08 & Bajo & Alta & Por confirmar con la coordinación \\ \hline
+\end{tabularx}
+\end{table}
+
 
 \subsection{Matriz poder--interés}
 
+La Figura~\ref{fig:matriz} ubica a los ocho roles según su poder y su interés. El archivo editable está en \texttt{modelos/matriz\_poder\_interes.drawio}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.45\textheight,keepaspectratio]{figuras/matriz_poder_interes.png}
+\caption{Matriz poder--interés de las partes interesadas.}
+\label{fig:matriz}
+\end{figure}
+
+
 \subsection{Estrategias de participación}
+
+Para los roles de poder alto e interés alto (SH-03) se propone gestionar de cerca, con reuniones para acordar el alcance. Para los de poder alto e interés medio o bajo (SH-04 y SH-08) se propone mantenerlos satisfechos, consultándolos solo sobre autorizaciones y protección de datos. Para los de interés alto y poder bajo o medio (SH-01 y SH-02) se propone mantenerlos informados mediante entrevistas y validación de lo documentado. Para los demás (SH-05, SH-06 y SH-07) se propone monitorear con consultas puntuales. La técnica y la frecuencia de cada contacto se detallan en el plan de elicitación.
+
 
 \section{Contexto del sistema}
 
@@ -614,4 +694,3 @@ Las respuestas y sugerencias generadas por Gemini fueron utilizadas como materia
 Por tanto, la inteligencia artificial se utilizó como herramienta complementaria durante el desarrollo de esta entrega, principalmente para tareas de consulta, planificación y revisión de la escritura, manteniendo la participación y el criterio de los integrantes en la elaboración del trabajo.
 
 \end{document}
-```
