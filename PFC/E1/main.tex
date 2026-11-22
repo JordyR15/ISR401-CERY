@@ -20,6 +20,7 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage{titlesec}
@@ -717,17 +718,24 @@ La participación de estas entidades permitirá establecer qué información nec
 
 La delimitación del sistema y su relación con los elementos externos se representa mediante un diagrama de contexto. Este modelo permitirá identificar los participantes, los servicios relacionados, los intercambios de información y la frontera que separa las funciones propias de la aplicación de aquellas que corresponden a su entorno \cite{pohl2015requirements}.
 
-La figura correspondiente se incorporará en este apartado una vez exportada la imagen desde el modelo editable.
+La Figura~\ref{fig:contexto} representa el sistema como un único elemento, con tres entidades externas propuestas (estudiante, docente tutor y coordinación académica) y dos dependencias que todavía deben confirmarse con la organización (fuentes académicas y servicio de notificaciones). Cada flecha indica qué información se intercambia, y las líneas discontinuas señalan lo que no está confirmado. La tabla de la subsección siguiente detalla el contenido de cada intercambio. El archivo editable está en \texttt{modelos/diagrama\_contexto.drawio}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{figuras/diagrama_contexto.png}
+\caption{Diagrama de contexto del sistema de gestión de tutorías y seguimiento estudiantil.}
+\label{fig:contexto}
+\end{figure}
 
 \subsection{Intercambios de información}
 
 \arrayrulecolor{azul}
 
-\begin{tabularx}{\textwidth}{
+\begin{longtable}{
     |>{\columncolor{azulclaro}\raggedright\arraybackslash}p{2.9cm}
     |>{\centering\arraybackslash}p{1.2cm}
     |>{\columncolor{azulclaro}\raggedright\arraybackslash}p{2.9cm}
-    |>{\raggedright\arraybackslash}X|
+    |>{\raggedright\arraybackslash}p{\dimexpr\textwidth-7cm-8\tabcolsep-5\arrayrulewidth\relax}|
 }
 
 \hline
@@ -739,6 +747,7 @@ La figura correspondiente se incorporará en este apartado una vez exportada la 
 \textcolor{white}{\textbf{Información intercambiada}} \\
 
 \hline
+\endhead
 
 Estudiante & $\rightarrow$ & Sistema &
 Solicitud de tutoría, temas de consulta, confirmación o cambio de horario y consulta de acuerdos. \\
@@ -780,7 +789,7 @@ Avisos de confirmación, reprogramación o recordatorios de tutoría. \\
 
 \hline
 
-\end{tabularx}
+\end{longtable}
 
 \subsection{Tabla de las ocho perspectivas de contexto}
 
