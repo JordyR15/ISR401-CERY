@@ -1,0 +1,56 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Diagrama de contexto" id="ctx">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1200" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="est" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=22;" value="Estudiante&#10;(SH-01)" vertex="1">
+          <mxGeometry height="110" width="190" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="doc" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=22;" value="Docente tutor&#10;(SH-02)" vertex="1">
+          <mxGeometry height="110" width="190" x="10" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="coo" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=22;" value="Coordinación&#10;académica (SH-03)" vertex="1">
+          <mxGeometry height="110" width="190" x="10" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="sis" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=26;fontStyle=1;" value="Sistema de gestión&#10;de tutorías y&#10;seguimiento&#10;estudiantil" vertex="1">
+          <mxGeometry height="440" width="240" x="480" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="fue" parent="1" style="rounded=0;whiteSpace=wrap;html=0;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=22;" value="Fuentes&#10;académicas&#10;(por confirmar)" vertex="1">
+          <mxGeometry height="110" width="190" x="1000" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="not" parent="1" style="rounded=0;whiteSpace=wrap;html=0;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=22;" value="Servicio de&#10;notificaciones&#10;(por confirmar)" vertex="1">
+          <mxGeometry height="110" width="190" x="1000" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" parent="1" source="est" target="sis" style="edgeStyle=none;html=0;endArrow=block;endFill=1;fontSize=20;labelBackgroundColor=#ffffff;strokeColor=#333333;exitX=1;exitY=0.2;exitDx=0;exitDy=0;entryX=0;entryY=0.136364;entryDx=0;entryDy=0;" value="Solicitud de tutoría,&#10;cambio de horario" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" parent="1" source="sis" target="est" style="edgeStyle=none;html=0;endArrow=block;endFill=1;fontSize=20;labelBackgroundColor=#ffffff;strokeColor=#333333;exitX=0;exitY=0.286364;exitDx=0;exitDy=0;entryX=1;entryY=0.8;entryDx=0;entryDy=0;" value="Horario confirmado,&#10;recordatorios, pendientes" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" parent="1" source="doc" target="sis" style="edgeStyle=none;html=0;endArrow=block;endFill=1;fontSize=20;labelBackgroundColor=#ffffff;strokeColor=#333333;exitX=1;exitY=0.2;exitDx=0;exitDy=0;entryX=0;entryY=0.477273;entryDx=0;entryDy=0;" value="Disponibilidad, asistencia,&#10;temas y recomendaciones" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" parent="1" source="sis" target="doc" style="edgeStyle=none;html=0;endArrow=block;endFill=1;fontSize=20;labelBackgroundColor=#ffffff;strokeColor=#333333;exitX=0;exitY=0.627273;exitDx=0;exitDy=0;entryX=1;entryY=0.8;entryDx=0;entryDy=0;" value="Solicitudes pendientes,&#10;historial e indicadores" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" parent="1" source="coo" target="sis" style="edgeStyle=none;html=0;endArrow=block;endFill=1;fontSize=20;labelBackgroundColor=#ffffff;strokeColor=#333333;exitX=1;exitY=0.2;exitDx=0;exitDy=0;entryX=0;entryY=0.772727;entryDx=0;entryDy=0;" value="Parámetros de seguimiento&#10;y reportes" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" parent="1" source="sis" target="coo" style="edgeStyle=none;html=0;endArrow=block;endFill=1;fontSize=20;labelBackgroundColor=#ffffff;strokeColor=#333333;exitX=0;exitY=0.922727;exitDx=0;exitDy=0;entryX=1;entryY=0.8;entryDx=0;entryDy=0;" value="Consolidados y alertas&#10;de seguimiento" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" parent="1" source="fue" target="sis" style="edgeStyle=none;html=0;endArrow=block;endFill=1;fontSize=20;labelBackgroundColor=#ffffff;strokeColor=#333333;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.386364;entryDx=0;entryDy=0;startArrow=block;startFill=1;dashed=1;" value="Matrícula, asistencia&#10;y rendimiento" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" parent="1" source="sis" target="not" style="edgeStyle=none;html=0;endArrow=block;endFill=1;fontSize=20;labelBackgroundColor=#ffffff;strokeColor=#333333;exitX=1;exitY=0.772727;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" value="Avisos y recordatorios" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1k" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=22;" value="" vertex="1"><mxGeometry height="26" width="40" x="790" y="606" as="geometry" /></mxCell>
+        <mxCell id="l1t" parent="1" style="text;html=0;align=left;verticalAlign=middle;fontSize=20;" value="Entidad propuesta por el equipo" vertex="1"><mxGeometry height="22" width="360" x="840" y="606" as="geometry" /></mxCell>
+        <mxCell id="l2k" parent="1" style="rounded=0;whiteSpace=wrap;html=0;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=22;" value="" vertex="1"><mxGeometry height="26" width="40" x="790" y="646" as="geometry" /></mxCell>
+        <mxCell id="l2t" parent="1" style="text;html=0;align=left;verticalAlign=middle;fontSize=20;" value="Por confirmar con la organización" vertex="1"><mxGeometry height="22" width="360" x="840" y="646" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
